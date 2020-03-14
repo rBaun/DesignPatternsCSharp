@@ -77,38 +77,38 @@ namespace DesignPatterns._2._Builder_pattern
 
     public class BuilderWithHtml
     {
-        static void Main(string[] args)
-        {
-            /**
-             * The two example below is without any custom builder
-             * It only uses StringBuilder to append strings.
-             */ 
+        //static void Main(string[] args)
+        //{
+        //    /**
+        //     * The two example below is without any custom builder
+        //     * It only uses StringBuilder to append strings.
+        //     */ 
 
-            //single parameter
-            var hello = "hello";
-            var sb = new StringBuilder();
-            sb.Append("<p>");
-            sb.Append(hello);
-            sb.Append("</p>");
-            Console.WriteLine(sb);
+        //    //single parameter
+        //    var hello = "hello";
+        //    var sb = new StringBuilder();
+        //    sb.Append("<p>");
+        //    sb.Append(hello);
+        //    sb.Append("</p>");
+        //    Console.WriteLine(sb);
 
-            //multi parameter
-            var words = new[] { "hello", "world" };
-            sb.Clear();
-            sb.Append("<ul>");
-            foreach (var word in words)
-                sb.AppendFormat("<li>{0}</li>", word);
-            sb.Append("</ul>");
-            Console.WriteLine(sb);  // needs to iterate through words, where you can use an HTML builder instead.
+        //    //multi parameter
+        //    var words = new[] { "hello", "world" };
+        //    sb.Clear();
+        //    sb.Append("<ul>");
+        //    foreach (var word in words)
+        //        sb.AppendFormat("<li>{0}</li>", word);
+        //    sb.Append("</ul>");
+        //    Console.WriteLine(sb);  // needs to iterate through words, where you can use an HTML builder instead.
 
-            /**
-             * Using the actual HTML Builder
-             */
-            var builder = new HtmlBuilder("ul");
-            builder.AddChild("li", "hello").AddChild("li", "world");
-            Console.WriteLine(builder);
+        //    /**
+        //     * Using the actual HTML Builder
+        //     */
+        //    var builder = new HtmlBuilder("ul");
+        //    builder.AddChild("li", "hello").AddChild("li", "world");
+        //    Console.WriteLine(builder);
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 }
