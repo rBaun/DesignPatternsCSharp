@@ -64,16 +64,16 @@ namespace DesignPatterns._2._Builder_pattern
 
     public class InheritanceBuilder
     {
-        static void Main(string[] args)
-        {
-            var p = Person.New
-                .Called("Rune")
-                .WorksAsA("Developer")
-                .Build();
-            Console.WriteLine(p);
+        //static void Main(string[] args)
+        //{
+        //    var p = Person.New
+        //        .Called("Rune")
+        //        .WorksAsA("Developer")
+        //        .Build();
+        //    Console.WriteLine(p);
 
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 }
