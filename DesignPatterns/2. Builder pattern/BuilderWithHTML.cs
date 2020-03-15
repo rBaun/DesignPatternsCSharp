@@ -57,6 +57,8 @@ namespace DesignPatterns._2._Builder_pattern
             root.Name = rootName;
         }
 
+        // Returns HtmlBuilder, so the AddChild can be called multiple times
+        // builder.AddChild("li", "foo").AddChild("li", "bar");
         public HtmlBuilder AddChild(string childName, string childText)
         {
             var e = new HtmlElement(childName, childText);
