@@ -55,14 +55,14 @@ namespace DesignPatterns._2._Builder_pattern
      */ 
     public class FunctionalBuilder
     {
-        static void Main(string[] args)
-        {
-            var pb = new PersonBuilderFunctional();
-            pb.Called("Rune")
-                .WorksAsA("Developer")
-                .Build();
+        //static void Main(string[] args)
+        //{
+        //    var pb = new PersonBuilderFunctional();
+        //    pb.Called("Rune")
+        //        .WorksAsA("Developer")
+        //        .Build();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 }
