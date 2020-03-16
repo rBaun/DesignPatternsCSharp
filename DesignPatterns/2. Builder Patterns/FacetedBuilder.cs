@@ -29,7 +29,8 @@ namespace DesignPatterns._2._Builder_pattern
 
         /**
          * This class works as a facacde and does NOT build the object,
-         * but it keeps a reference.
+         * but it keeps a reference. Instead it uses the reference of a person
+         * in the builder classes below.
          */ 
         public class PersonFacadeBuilder
         {
@@ -40,7 +41,7 @@ namespace DesignPatterns._2._Builder_pattern
             public PersonFacetedJobBuilder Works => new PersonFacetedJobBuilder(person);
             public PersonFacetedAddressBuilder Lives => new PersonFacetedAddressBuilder(person);
 
-            // only used to show person object in console.writeline
+            // only used to show person object in console.writeline instead of the actual object name
             public static implicit operator PersonFaceted(PersonFacadeBuilder pb)
             {
                 return pb.person;
