@@ -4,6 +4,10 @@ using System.Text;
 
 namespace DesignPatterns._2._Builder_pattern
 {
+    /**
+     * This builder outputs the HTML elements in a more readable
+     * way, such that the elements are indented as regular HTML code.
+     */ 
     public class HtmlElement
     {
         public string Name, Text;
@@ -18,6 +22,10 @@ namespace DesignPatterns._2._Builder_pattern
             this.Text = text ?? throw new ArgumentNullException(paramName: nameof(text));
         }
 
+        /**
+         * Uses the StringBuilder to append strings together with the 
+         * indentation as a parameter.
+         */ 
         private string ToStringImpl(int indent)
         {
             var sb = new StringBuilder();
