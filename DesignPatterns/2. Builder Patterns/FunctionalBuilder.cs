@@ -41,6 +41,7 @@ namespace DesignPatterns._2._Builder_pattern
      */ 
     public static class PersonBuilderExtension
     {
+        // You can add the extension methods needed here..
         public static PersonBuilderFunctional WorksAsA
             (this PersonBuilderFunctional builder, string position)
         {
