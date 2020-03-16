@@ -107,19 +107,19 @@ namespace DesignPatterns._2._Builder_pattern
             }
         }
 
-        static void Main(string[] args)
-        {
-            var pb = new PersonFacadeBuilder();
-            PersonFaceted person = pb
-                .Lives.At("Jomfru Ane Gade 21A")
-                      .In("Aalborg")
-                      .WithPostcode("9000")
-                .Works.At("Google")
-                      .AsA("Developer")
-                      .Earning(50000);
+        //static void Main(string[] args)
+        //{
+        //    var pb = new PersonFacadeBuilder();
+        //    PersonFaceted person = pb
+        //        .Lives.At("Jomfru Ane Gade 21A")
+        //              .In("Aalborg")
+        //              .WithPostcode("9000")
+        //        .Works.At("Google")
+        //              .AsA("Developer")
+        //              .Earning(50000);
 
-            Console.WriteLine(person);
-            Console.ReadLine();
-        }
+        //    Console.WriteLine(person);
+        //    Console.ReadLine();
+        //}
     }
 }
